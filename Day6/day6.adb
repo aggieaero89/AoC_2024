@@ -162,7 +162,7 @@ begin
             Lab_Map := Copy_Map;
             Guard := Copy_Guard;
 
-            if not (Guard.Row = I and Guard.Col = J) then
+            if Lab_Map(I,J) = '.' then
                Lab_Map(I,J) := '#';
 
                Loop_Knt := 0;
